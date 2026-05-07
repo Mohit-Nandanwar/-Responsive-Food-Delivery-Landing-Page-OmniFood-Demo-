@@ -1,0 +1,73 @@
+/* --- Tablets and smaller (940px and below) --- */
+@media only screen and (max-width: 940px) {
+    .row { padding: 0 2%; }
+    
+    h1 { font-size: 300%; }
+    h2 { font-size: 170%; }
+}
+
+/* --- Small Tablets and Large Phones (767px and below) --- */
+@media only screen and (max-width: 767px) {
+    .row { padding: 0 4%; }
+    
+    /* Make columns full width so they stack */
+    .col { 
+        width: 100% !important; 
+        display: block;
+        margin-left: 0 !important;
+        margin-bottom: 30px;
+    }
+    
+    .section-features .col:last-child,
+    .section-cities .col:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Adjust Navigation */
+    .main-nav { display: none; }
+    .logo { height: 50px; }
+
+    /* Fix Hero Text */
+    .hero-text-box {
+        width: 90%;
+        padding: 0 5%;
+    }
+
+    /* Meal Showcase: 2 images per row */
+    .meal-showcase li {
+        width: 50%;
+    }
+
+    /* Testimonials padding */
+    blockquote {
+        padding: 2%;
+    }
+}
+
+/* --- Small Phones (480px and below) --- */
+@media only screen and (max-width: 480px) {
+    h1 { font-size: 250%; }
+    
+    .btn:link, .btn:visited {
+        display: block;
+        width: 80%;
+        margin: 0 auto 15px auto;
+        text-align: center;
+    }
+
+    .meal-showcase li {
+        width: 100%;
+    }
+    
+    .app-screen {
+        width: 50%; /* Center the phone image on mobile */
+        margin: 0 auto 30px auto;
+        display: block;
+    }
+
+    .footer-nav, .social-links {
+        text-align: center;
+        float: none !important;
+        margin-bottom: 20px;
+    }
+}
